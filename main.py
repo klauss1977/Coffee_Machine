@@ -32,6 +32,7 @@ resources = {
 
 
 def make_drink(drink):
+    """Calculates remaining resources"""
     water = MENU[drink]['ingredients']['water']
     coffee = MENU[drink]['ingredients']['coffee']
     if drink != 'espresso':
