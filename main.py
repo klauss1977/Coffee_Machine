@@ -34,7 +34,7 @@ resources = {
 
 def make_drink(drink):
     """Prepares the drink, deducts the required ingredients from resources and calculates remaining resources if the
-    payment is processed succesfully."""
+    payment is processed successfully."""
     water = MENU[drink]['ingredients']['water']
     coffee = MENU[drink]['ingredients']['coffee']
     milk = MENU[drink]['ingredients']['milk']
@@ -81,6 +81,7 @@ def process_coins(product):
         resources['money'] += cost
         return True
 
+
 shutdown = False
 resources['money'] = 0
 
@@ -97,5 +98,3 @@ Money: ${resources['money']}""")
         make_drink(order)
     else:
         print(f"You entered '{order}', which is not correct. Please, try again.")
-
-
